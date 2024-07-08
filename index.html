@@ -1,12 +1,38 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div>Shihab Vai</div>
-  </body>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./index.css" />
+
+  <title>M Design</title>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Header Section -->
+<header class="header bg-white" id="header">
+  <nav class="flex flex-row items-center justify-center gap-x-5 w-full m-auto max-w-7xl h-20">
+    <a href="#">
+      <img src="./public/assets/logo.png" alt="logo" class="w-full h-full" />
+    </a>
+    <div class="burger relative block cursor-pointer select-none order-[-1] z-10 w-6 h-[1.15rem] border-none outline-none bg-transparent visible transform rotate-0 transition ease-[0.35s]" id="burger">
+      <span class="burger-line absolute block left-0 w-full h-[2px] border-none outline-none opacity-100 rounded-full bg-black transition-transform ease-in-out duration-250"></span>
+      <span class="burger-line absolute block left-0 w-full h-[2px] border-none outline-none opacity-100 rounded-full bg-black transition-transform ease-in-out duration-250"></span>
+      <span class="burger-line absolute block left-0 w-full h-[2px] border-none outline-none opacity-100 rounded-full bg-black transition-transform ease-in-out duration-250"></span>
+    </div>
+    <div class="menu fixed top-[-100%] left-0 w-full h-auto p-[4rem_0_3rem] overflow-hidden bg-white shadow-lg transition-all duration-400 ease-in-out" id="menu">
+      <ul class="menu-inner flex flex-col justify-center items-center">
+        <li class="menu-item"><a href="#" class="menu-link font-inherit text-base font-medium leading-snug text-black uppercase transition-all duration-300">About</a></li>
+        <li class="menu-item"><a href="#" class="menu-link font-inherit text-base font-medium leading-snug text-black uppercase transition-all duration-300">Skills</a></li>
+        <li class="menu-item"><a href="#" class="menu-link font-inherit text-base font-medium leading-snug text-black uppercase transition-all duration-300">Portfolio</a></li>
+        <li class="menu-item"><a href="#" class="menu-link font-inherit text-base font-medium leading-snug text-black uppercase transition-all duration-300">Testimonial</a></li>
+      </ul>
+    </div>
+    <a href="#" class="menu-block inline-block font-inherit text-sm font-medium leading-5 text-center px-4 py-2 rounded-lg capitalize text-black border-[2px] border-solid border-[#0DB760]">Download CV</a>
+  </nav>
+</header>
+
+
+</body>
+<!-- partial -->
+<script  src="./main.js"></script>
 </html>
