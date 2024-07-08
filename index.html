@@ -7,7 +7,6 @@
     <title>M Design</title>
   </head>
   <body>
-    <!-- partial:index.partial.html -->
     <!-- Header Section -->
     <header class="header bg-white" id="header">
       <nav
@@ -17,7 +16,7 @@
           <img
             src="./public/assets/logo.png"
             alt="logo"
-            class="w-full h-full"
+            class="w-[174px] h-[48px]"
           />
         </a>
         <div
@@ -69,11 +68,7 @@
             </li>
           </ul>
         </div>
-        <a
-          href="#"
-          class="menu-block inline-block font-inherit text-sm font-semibold leading-5 text-center px-4 py-2 rounded-lg capitalize text-black border-[2px] border-solid border-[#0DB760]"
-          >Download CV</a
-        >
+
       </nav>
     </header>
 
@@ -97,7 +92,7 @@
           <div class="flex items-center gap-2">
             <a
               class="bg-[#0DB760] text-white text-[16px] font-medium leading-[24px] px-[3rem] py-3 rounded-lg mt-10"
-              >Contact Me</a
+              >Download CV</a
             >
             <a
               class="flex gap-2 text-black text-[16px] font-medium leading-[24px] px-6 py-3 rounded-lg mt-10"
@@ -109,7 +104,7 @@
             /></a>
           </div>
         </div>
-        <div class="flex m-auto pt-10">
+        <div class="flex justify-end pt-10">
           <img
             src="public/assets/about.png"
             alt="about"
@@ -219,6 +214,186 @@
               Create digital user products with updated ideas
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer
+      class="bg-white px-2 pt-16 pb-16 mx-auto max-w-screen-2xl m-auto"
+      id="footer"
+    >
+      <div class="mb-4">
+        <div
+          class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12"
+        >
+          <h5 class="text-xl text-[#0DB760] leading-[29px]">Contact</h5>
+          <h2 class="text-[40px] font-bold text-black leading-[54px]">
+            Let’s Discuss Your
+            <span class="text-[#0DB760]">Project</span>
+          </h2>
+          <p class="mt-4 text-[16px] text-[#323433] leading-[24px] px-[130px]">
+            Let’s make something new, different and more meaningful or make
+            thing more visual or conceptual
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2">
+        <div class="h-full pt-12">
+          <div class="flex pb-8">
+            <div
+              class="flex h-[56px] w-[56px] items-center justify-center bg-[#0DB760] text-black rounded-md"
+            >
+              <img
+                src="public/assets/phone.png"
+                alt="location"
+                class="w-[24px] h-[24px]"
+              />
+            </div>
+            <div class="ml-4 mb-4">
+              <h3 class="mb-2 text-lg font-medium leading-6 text-black">
+                Call me
+              </h3>
+              <p class="text-gray-600 dark:text-slate-400">+8801771924612</p>
+            </div>
+          </div>
+
+          <div class="flex pb-8">
+            <div
+              class="flex h-[56px] w-[56px] items-center justify-center bg-[#0DB760] text-black rounded-md"
+            >
+              <img
+                src="public/assets/mail.png"
+                alt="mail"
+                class="w-[24px] h-[24px]"
+              />
+            </div>
+            <div class="ml-4 mb-4">
+              <h3 class="mb-2 text-lg font-medium leading-6 text-black">
+                Email me
+              </h3>
+              <p class="text-gray-600 dark:text-slate-400">
+                hellochanchol@gmail.com
+              </p>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div
+              class="flex h-[56px] w-[56px] items-center justify-center bg-[#0DB760] text-black rounded-md"
+            >
+              <img
+                src="public/assets/location.png"
+                alt="mail"
+                class="w-[24px] h-[24px]"
+              />
+            </div>
+            <div class="ml-4 mb-4">
+              <h3 class="mb-2 text-lg font-medium leading-6 text-black">
+                Address
+              </h3>
+              <p class="text-gray-600 dark:text-slate-400">
+                Mirpur, Dhaka, Bangladesh.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card h-fit mt-5" id="form">
+          <form id="contactForm">
+            <div>
+              <div class="flex gap-5 mb-5">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Full Name"
+                  class="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
+                  name="name"
+                />
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your email"
+                  class="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
+                  name="name"
+                />
+              </div>
+              <div class="flex gap-5 mb-5">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Phone Number"
+                  class="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
+                  name="name"
+                />
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Budget"
+                  class="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
+                  name="name"
+                />
+              </div>
+            </div>
+            <div class="mx-0 mb-1 sm:mb-4">
+              <textarea
+                id="textarea"
+                name="textarea"
+                cols="30"
+                rows="5"
+                placeholder="Write your message..."
+                class="mb-2 w-full rounded-md border border-[#BEC0BF] py-3 pl-4 shadow-md"
+              ></textarea>
+            </div>
+            <div class="text-right">
+              <button
+                type="submit"
+                class="w-60 bg-[#0DB760] text-white px-6 py-3 font-xl rounded-md sm:mb-0"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bottom Footer -->
+    <div class="px-2 pb-12 mx-auto max-w-screen-2xl">
+      <div class="grid grid-cols-3 border-solid border-t border-t-black pt-10">
+
+          <h4 class="text-[16px] leading-[16px] text-black">
+            @ 2022. All Rights Reserved
+          </h4>
+
+          <h4 class="text-[16px] leading-[16px] text-black text-center">
+            Designed by Shihab Parves
+          </h4>
+        <div class="flex justify-end gap-4">
+          <a href="#" class="text-[16px] leading-[16px] text-black text-right"
+            ><img
+              src="public/assets/facebook.png"
+              alt="facebook"
+              class="w-[24px] h-[24px]"
+          /></a>
+          <a href="#" class="text-[16px] leading-[16px] text-black text-right"
+            ><img
+              src="public/assets/twitter.png"
+              alt="facebook"
+              class="w-[24px] h-[24px]"
+          /></a>
+          <a href="#" class="text-[16px] leading-[16px] text-black text-right"
+            ><img
+              src="public/assets/linkedin.png"
+              alt="facebook"
+              class="w-[24px] h-[24px]"
+          /></a>
+          <a href="#" class="text-[16px] leading-[16px] text-black text-right"
+            ><img
+              src="public/assets/instagram.png"
+              alt="facebook"
+              class="w-[24px] h-[24px]"
+          /></a>
         </div>
       </div>
     </div>
