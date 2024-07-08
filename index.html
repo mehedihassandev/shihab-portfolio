@@ -1,12 +1,228 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>M Design</title>
   </head>
   <body>
-    <div>Shihab Vai</div>
+    <!-- partial:index.partial.html -->
+    <!-- Header Section -->
+    <header class="header bg-white" id="header">
+      <nav
+        class="flex flex-row items-center gap-x-5 w-full m-auto max-w-screen-2xl h-20"
+      >
+        <a href="#">
+          <img
+            src="./public/assets/logo.png"
+            alt="logo"
+            class="w-full h-full"
+          />
+        </a>
+        <div
+          class="burger relative block cursor-pointer select-none order-[-1] z-10 w-6 h-[1.15rem] border-none outline-none bg-transparent visible transform rotate-0 transition ease-[0.35s]"
+          id="burger"
+        >
+          <span
+            class="burger-line absolute block left-0 w-full h-[2px] border-none outline-none opacity-100 rounded-full bg-black transition-transform ease-in-out duration-250"
+          ></span>
+          <span
+            class="burger-line absolute block left-0 w-full h-[2px] border-none outline-none opacity-100 rounded-full bg-black transition-transform ease-in-out duration-250"
+          ></span>
+          <span
+            class="burger-line absolute block left-0 w-full h-[2px] border-none outline-none opacity-100 rounded-full bg-black transition-transform ease-in-out duration-250"
+          ></span>
+        </div>
+        <div
+          class="menu fixed top-[-100%] left-0 w-full h-auto p-[4rem_0_3rem] overflow-hidden bg-white shadow-lg transition-all duration-400 ease-in-out"
+          id="menu"
+        >
+          <ul class="menu-inner flex flex-col justify-center items-center">
+            <li class="menu-item">
+              <a
+                href="#"
+                class="menu-link font-inherit text-base font-semibold leading-snug text-black uppercase transition-all duration-300"
+                >About</a
+              >
+            </li>
+            <li class="menu-item">
+              <a
+                href="#"
+                class="menu-link font-inherit text-base font-semibold leading-snug text-black uppercase transition-all duration-300"
+                >Skills</a
+              >
+            </li>
+            <li class="menu-item">
+              <a
+                href="#"
+                class="menu-link font-inherit text-base font-semibold leading-snug text-black uppercase transition-all duration-300"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu-item">
+              <a
+                href="#"
+                class="menu-link font-inherit text-base font-semibold leading-snug text-black uppercase transition-all duration-300"
+                >Testimonial</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a
+          href="#"
+          class="menu-block inline-block font-inherit text-sm font-semibold leading-5 text-center px-4 py-2 rounded-lg capitalize text-black border-[2px] border-solid border-[#0DB760]"
+          >Download CV</a
+        >
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="px-2 py-24 mx-auto max-w-screen-2xl m-auto" id="about">
+      <div class="grid grid-cols-2">
+        <div class="pt-32">
+          <h1 class="text-6xl font-bold text-black pt-8 leading-[4.375rem]">
+            I have
+            <span class="text-[#0DB760]"
+              >Creative<br />
+              Design</span
+            >
+            Experience
+          </h1>
+          <p class="text-[16px] leading-[24px] pt-5 pr-52">
+            I’m Shihab, a creative Mid Level UX/UI Designer. I’ve been helping
+            businesses to solve their problems with my design Experience for
+            more than 3 years.
+          </p>
+          <div class="flex items-center gap-2">
+            <a
+              class="bg-[#0DB760] text-white text-[16px] font-medium leading-[24px] px-[3rem] py-3 rounded-lg mt-10"
+              >Contact Me</a
+            >
+            <a
+              class="flex gap-2 text-black text-[16px] font-medium leading-[24px] px-6 py-3 rounded-lg mt-10"
+              >View Portfolio
+              <img
+                src="public/assets/arrow-icon.png"
+                alt="arrow"
+                class="w-[24px] h-[24px]"
+            /></a>
+          </div>
+        </div>
+        <div class="flex m-auto pt-10">
+          <img
+            src="public/assets/about.png"
+            alt="about"
+            class="w-[30rem] h-[35rem]"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Shape IMG -->
+    <img
+      src="public/assets/shape.png"
+      alt="ellipse"
+      class="absolute top-[50px] left-[80px] w-[660px] h-[860px] z-50"
+    />
+
+    <!-- Achievement Section -->
+    <div class="px-2 pt-24 mx-auto max-w-screen-2xl m-auto" id="achievement">
+      <div class="grid grid-cols-3 gap-48">
+        <div
+          class="flex flex-col justify-start border-r-[1px] border-solid border-[#0DB760]"
+        >
+          <h1 class="text-5xl font-bold text-[#0DB760] leading-[48px]">10+</h1>
+          <p class="text-[28px] leading-[28px] pt-5 capitalize">
+            Satisfied clients
+          </p>
+        </div>
+        <div
+          class="flex flex-col justify-start border-r-[1px] border-solid border-[#0DB760]"
+        >
+          <h1 class="text-5xl font-bold text-[#0DB760] leading-[48px]">20+</h1>
+          <p class="text-[28px] leading-[28px] pt-5 capitalize">
+            Projects completed
+          </p>
+        </div>
+        <div class="flex flex-col justify-start">
+          <h1 class="text-5xl font-bold text-[#0DB760] leading-[48px]">100+</h1>
+          <p class="text-[28px] leading-[28px] pt-5 capitalize">
+            Reviews given
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="px-2 pt-5 pb-16 mx-auto max-w-screen-2xl m-auto" id="skills">
+      <div class="grid grid-cols-2">
+        <div class="pt-44">
+          <h5 class="text-xl text-[#0DB760] leading-[29px]">My Skills</h5>
+          <h2 class="text-[40px] font-bold text-black leading-[54px]">
+            Why Hire Me For Your <br />
+            Next <span class="text-[#0DB760]">Project?</span>
+          </h2>
+          <p class="text-[16px] leading-[24px] pt-2 pr-60 pb-10">
+            I’m specialist in UI/UX Designe. My passion is designing & solving
+            problems through user experience and research.
+          </p>
+          <a
+            class="bg-[#0DB760] text-white text-[16px] font-medium leading-[24px] px-[3.5rem] py-3 rounded-lg"
+            >Hire Me</a
+          >
+        </div>
+
+        <div class="grid grid-cols-2 pt-32 gap-10">
+          <div class="p-6 bg-[#fafafa] rounded-md">
+            <img
+              src="public/assets/diamond.png"
+              alt="diamond"
+              class="w-[28px] h-[28px]"
+            />
+            <h5
+              class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black"
+            >
+              Visual Design
+            </h5>
+            <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
+              Create user interface design with unique & modern ideas
+            </p>
+          </div>
+          <div class="p-6 bg-[#fafafa] rounded-md relative top-28 left-0">
+            <img
+              src="public/assets/pulse.png"
+              alt="diamond"
+              class="w-[28px] h-[28px]"
+            />
+            <h5
+              class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black"
+            >
+              Design Prototype
+            </h5>
+            <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
+              Create advance design prototype with Figma apps.
+            </p>
+          </div>
+          <div class="p-6 bg-[#fafafa] rounded-md">
+            <img
+              src="public/assets/school.png"
+              alt="diamond"
+              class="w-[28px] h-[28px]"
+            />
+            <h5
+              class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black"
+            >
+              UX Research
+            </h5>
+            <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
+              Create digital user products with updated ideas
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <!-- partial -->
+  <script src="./main.js"></script>
 </html>

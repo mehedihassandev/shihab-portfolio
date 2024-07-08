@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu.is-active {
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 48rem) {
+    .menu {
+        position: relative;
+        top: 0;
+        width: auto;
+        height: auto;
+        padding: 0rem;
+        margin-left: auto;
+        background: none;
+        box-shadow: none;
+    }
+    .menu-inner {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+        margin: 0 auto;
+    }
+    .menu-link {
+        text-transform: capitalize;
+    }
+    .menu-block {
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    .burger {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.burger-line:nth-child(1) {
+    top: 0px;
+}
+.burger-line:nth-child(2) {
+    top: 0.5rem;
+    width: 70%;
+}
+.burger-line:nth-child(3) {
+    top: 1rem;
+}
+.burger.is-active .burger-line:nth-child(1) {
+    top: 0.5rem;
+    transform: rotate(135deg);
+}
+.burger.is-active .burger-line:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+}
+.burger.is-active .burger-line:nth-child(3) {
+    top: 0.5rem;
+    transform: rotate(-135deg);
+}
+
