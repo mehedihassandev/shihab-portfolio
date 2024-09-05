@@ -10,7 +10,7 @@
   <title>MD. Shihab Parves</title>
 </head>
 
-<body>
+<body class="font-inter">
   <!-- Header Section -->
   <header class="header bg-white fixed top-0 left-0 w-full z-40" id="header">
     <nav class="flex flex-row items-center gap-x-5 w-full m-auto max-w-screen-2xl h-20">
@@ -28,7 +28,7 @@
           class="burger-line absolute block left-0 w-full h-[2px] border-none outline-none opacity-100 rounded-full bg-black transition-transform ease-in-out duration-250"></span>
       </div>
       <div
-        class="menu fixed top-[-100%] left-0 w-full h-auto p-[4rem_0_3rem] overflow-hidden bg-white shadow-lg transition-all duration-400 ease-in-out"
+        class="menu fixed top-[-100%] left-0 w-full h-auto p-[4rem_0_3rem] overflow-hidden bg-white shadow-lg transition-all duration-400 ease-in-out font-inter"
         id="menu">
         <ul class="menu-inner flex flex-col justify-center items-center">
           <li class="menu-item">
@@ -38,6 +38,10 @@
           <li class="menu-item">
             <a href="#portfolio"
               class="menu-link font-inherit text-base font-semibold leading-snug text-black uppercase transition-all duration-300">Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a href="#testimonial"
+              class="menu-link font-inherit text-base font-semibold leading-snug text-black uppercase transition-all duration-300">Testimonial</a>
           </li>
           <li class="menu-item">
             <a href="#footer"
@@ -106,87 +110,97 @@
   </div>
 
   <!-- Skills Section -->
-  <div class="px-2 mx-auto max-w-screen-2xl m-auto" id="skills">
-    <div class="grid grid-cols-2">
-      <div class="pt-44">
-        <!-- <h5 class="text-xl text-[#0DB760] leading-[29px]">My Skills</h5> -->
-        <h2 class="text-[40px] font-bold text-black leading-[54px]">
-          Why Hire Me For Your <br />
-          Next <span class="text-[#0DB760]">Project?</span>
-        </h2>
-        <p class="text-[16px] leading-[24px] pt-2 pr-60 pb-10">
-          I’m specialist in UI/UX Designer. My passion is designing & solving
-          problems through user experience and research.
-        </p>
-        <a class="bg-[#0DB760] text-white text-[16px] font-medium leading-[24px] px-[3.5rem] py-3 rounded-lg">Hire
-          Me</a>
-      </div>
-
-      <div class="grid grid-cols-2 pt-32 gap-10">
-        <div class="p-6 bg-[#fafafa] rounded-md">
-          <img src="public/assets/diamond.png" alt="diamond" class="w-[28px] h-[28px]" />
-          <h5 class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
-            Visual Design
-          </h5>
-          <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
-            Create user interface design with unique & modern ideas
+  <section>
+    <img src="/public/assets/square-shape.png" alt="ellipse"
+      class="relative top-64 right-0 w-[36px] h-[132px] z-50 ml-auto" />
+    <div class="px-2 mx-auto max-w-screen-2xl m-auto" id="skills">
+      <div class="grid grid-cols-2">
+        <div class="pt-44">
+          <!-- <h5 class="text-xl text-[#0DB760] leading-[29px]">My Skills</h5> -->
+          <h2 class="text-[40px] font-bold text-black leading-[54px]">
+            Why Hire Me For Your <br />
+            Next <span class="text-[#0DB760]">Project?</span>
+          </h2>
+          <p class="text-[16px] leading-[24px] pt-2 pr-60 pb-10">
+            I’m specialist in UI/UX Designer. My passion is designing & solving
+            problems through user experience and research.
           </p>
+          <a class="bg-[#0DB760] text-white text-[16px] font-medium leading-[24px] px-[3.5rem] py-3 rounded-lg">Hire
+            Me</a>
         </div>
-        <div class="p-6 bg-[#fafafa] rounded-md relative top-28 left-0">
-          <img src="public/assets/pulse.png" alt="diamond" class="w-[28px] h-[28px]" />
-          <h5 class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
-            Design Prototype
-          </h5>
-          <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
-            Create advance design prototype with Figma apps.
-          </p>
-        </div>
-        <div class="p-6 bg-[#fafafa] rounded-md">
-          <img src="public/assets/school.png" alt="diamond" class="w-[28px] h-[28px]" />
-          <h5 class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
-            UX Research
-          </h5>
-          <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
-            Create digital user products with updated ideas
-          </p>
+        <div class="grid grid-cols-2 pt-32 gap-10">
+          <div class="p-6 bg-[#fafafa] rounded-md">
+            <img src="public/assets/diamond.png" alt="diamond" class="w-[28px] h-[28px]" />
+            <h5 class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
+              Visual Design
+            </h5>
+            <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
+              Create user interface design with unique & modern ideas
+            </p>
+          </div>
+          <div class="p-6 bg-[#fafafa] rounded-md relative top-28 left-0">
+            <img src="public/assets/pulse.png" alt="diamond" class="w-[28px] h-[28px]" />
+            <h5 class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
+              Design Prototype
+            </h5>
+            <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
+              Create advance design prototype with Figma apps.
+            </p>
+          </div>
+          <div class="p-6 bg-[#fafafa] rounded-md">
+            <img src="public/assets/school.png" alt="diamond" class="w-[28px] h-[28px]" />
+            <h5 class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
+              UX Research
+            </h5>
+            <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
+              Create digital user products with updated ideas
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- About Section -->
-  <div class="px-2 mx-auto max-w-screen-2xl m-auto pt-20" id="skills">
-    <div class="grid grid-cols-3">
-      <div class="col-span-1 row-span-2">
-        <img src="public/assets/about2.png" alt="about" class="w-[371px] h-[500px]" />
-      </div>
+  <section>
+    <img src="/public/assets/square-shape.png" alt="ellipse" class="relative top-56 left-0 w-[36px] h-[132px] z-50" />
+    <div class="px-2 mx-auto max-w-screen-2xl m-auto pt-20" id="skills">
+      <div class="grid grid-cols-3">
+        <div class="col-span-1 row-span-2">
+          <img src="public/assets/about2.png" alt="about" class="w-[371px] h-[500px]" />
+        </div>
 
-      <div class="col-span-2 row-span-10 pt-14 bg-cover bg-center"
-        style="background-image: url('./public/assets/spchanchol.png');">
-        <h5 class="text-xl text-[#0DB760]">About Me</h5>
-        <h2 class="text-[60px] font-bold text-black">
-          Md.Shihab Parves
-        </h2>
-        <h3 class="text-[24px] font-semibold text-black pb-7">
-          UX/UI Designer | Webflow Designer
-        </h3>
-        <p class="text-[16px] text-[#323433] leading-[24px] font-semibold pt-2 pb-5">
-          Self-motivated Mid-Level UX/UI Designer with 4+ years of experience in creating digital products across
-          diverse sectors, including POS systems, SaaS, enterprise software, mobile apps, fintech, and crypto websites.
-        </p>
-        <p class="text-[16px] text-[#323433] leading-[24px] pt-2 ">
-          In my role, I have enough knowledge of user experience methods, visual design, innovation, ideation,
-          prototyping, concept visualization, user testing, presentation, and support the developers through the launch
-          process. Values teamwork and brings a growth mindset to every challenge, constantly seeking new knowledge and
-          skills.
-        </p>
+        <div class="col-span-2 row-span-10 pt-14 bg-cover bg-center"
+          style="background-image: url('./public/assets/spchanchol.png');">
+          <h5 class="text-xl text-[#0DB760]">About Me</h5>
+          <h2 class="text-[60px] font-bold text-black">
+            Md.Shihab Parves
+          </h2>
+          <h3 class="text-[24px] font-semibold text-black pb-7">
+            UX/UI Designer | Webflow Designer
+          </h3>
+          <p class="text-[16px] text-[#323433] leading-[24px] font-semibold pt-2 pb-5">
+            Self-motivated Mid-Level UX/UI Designer with 4+ years of experience in creating digital products across
+            diverse sectors, including POS systems, SaaS, enterprise software, mobile apps, fintech, and crypto
+            websites.
+          </p>
+          <p class="text-[16px] text-[#323433] leading-[24px] pt-2 ">
+            In my role, I have enough knowledge of user experience methods, visual design, innovation, ideation,
+            prototyping, concept visualization, user testing, presentation, and support the developers through the
+            launch
+            process. Values teamwork and brings a growth mindset to every challenge, constantly seeking new knowledge
+            and
+            skills.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Case Study Section -->
   <section>
-    <img src="/public/assets/square-shape.png" alt="ellipse" class="relative top-56 left-0 w-[36px] h-[132px] z-50" />
+    <img src="/public/assets/square-shape.png" alt="ellipse"
+      class="relative top-64 right-0 w-[36px] h-[132px] z-50 ml-auto" />
 
     <div class="px-2 mx-auto max-w-screen-2xl">
       <h3 class="text-[40px] text-black font-bold leading-[66px]">
@@ -195,64 +209,64 @@
 
       <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-lg w-full flex-row mt-10">
         <div class="py-10 w-full px-16">
-          <h6 class="block leading-[32px] text-gray-700 text-[20px] pb-1">
+          <h6 class="block leading-[32px] text-gray-700 text-[16px] pb-1">
             UX Case Study
           </h6>
-          <h4 class="block mb-2 text-3xl antialiased font-bold leading-snug tracking-normal text-[#2F2A4B]">
-            Telehealth UX Case Study
+          <h4 class="block mb-2 text-2xl antialiased font-bold leading-snug tracking-normal text-[#2F2A4B]">
+            Vojbari Food Delivery App
           </h4>
-          <p class="block mb-8 text-lg antialiased leading-[30px] text-[#2F2A4B]">
+          <p class="block mb-8 text-base antialiased leading-[30px] text-[#2F2A4B]">
             Designing for User Engagement and Retention
           </p>
           <a href="#"
-            class="flex items-center gap-4 py-3 text-base font-bold text-center uppercase transition-all rounded-lg text-[#0DB760]">
+            class="flex items-center gap-4 py-3 text-sm font-bold text-center uppercase transition-all rounded-lg text-[#0DB760]">
             Click to Visit <img src="/public/assets/arrow-right.png" /></a>
         </div>
 
         <div class="relative w-2/5 rounded-r-xl">
-          <img src="/public/assets/case-one.png" alt="card-image" class="object-cover w-full h-full" />
+          <img src="/public/assets/case1.png" alt="card-image" class="object-cover w-full h-full" />
         </div>
       </div>
 
       <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-lg w-full flex-row mt-10">
         <div class="py-10 w-full px-16">
-          <h6 class="block leading-[32px] text-gray-700 text-[20px] pb-1">
+          <h6 class="block leading-[32px] text-gray-700 text-[16px] pb-1">
             UX Case Study
           </h6>
-          <h4 class="block mb-2 text-3xl antialiased font-bold leading-snug tracking-normal text-[#2F2A4B]">
-            Telehealth UX Case Study
+          <h4 class="block mb-2 text-2xl antialiased font-bold leading-snug tracking-normal text-[#2F2A4B]">
+            TimepieceX — A UX Case Study
           </h4>
-          <p class="block mb-8 text-lg antialiased leading-[30px] text-[#2F2A4B]">
-            Designing for User Engagement and Retention
+          <p class="block mb-8 text-base antialiased leading-[30px] text-[#2F2A4B]">
+            Redesigning smart Watch User Experience
           </p>
           <a href="#"
-            class="flex items-center gap-4 py-3 text-base font-bold text-center uppercase transition-all rounded-lg text-[#0DB760]">
+            class="flex items-center gap-4 py-3 text-sm font-bold text-center uppercase transition-all rounded-lg text-[#0DB760]">
             Click to Visit <img src="/public/assets/arrow-right.png" /></a>
         </div>
 
         <div class="relative w-2/5 rounded-r-xl">
-          <img src="/public/assets/case-one.png" alt="card-image" class="object-cover w-full h-full" />
+          <img src="/public/assets/case2.png" alt="card-image" class="object-cover w-full h-full" />
         </div>
       </div>
 
       <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-lg w-full flex-row mt-10">
         <div class="py-10 w-full px-16">
-          <h6 class="block leading-[32px] text-gray-700 text-[20px] pb-1">
+          <h6 class="block leading-[32px] text-gray-700 text-[16px] pb-1">
             UX Case Study
           </h6>
-          <h4 class="block mb-2 text-3xl antialiased font-bold leading-snug tracking-normal text-[#2F2A4B]">
-            Telehealth UX Case Study
+          <h4 class="block mb-2 text-2xl antialiased font-bold leading-snug tracking-normal text-[#2F2A4B]">
+            MyCare App
           </h4>
-          <p class="block mb-8 text-lg antialiased leading-[30px] text-[#2F2A4B]">
-            Designing for User Engagement and Retention
+          <p class="block mb-8 text-base antialiased leading-[30px] text-[#2F2A4B]">
+            Wallet app for offers, bills, & more
           </p>
           <a href="#"
-            class="flex items-center gap-4 py-3 text-base font-bold text-center uppercase transition-all rounded-lg text-[#0DB760]">
+            class="flex items-center gap-4 py-3 text-sm font-bold text-center uppercase transition-all rounded-lg text-[#0DB760]">
             Click to Visit <img src="/public/assets/arrow-right.png" /></a>
         </div>
 
         <div class="relative w-2/5 rounded-r-xl">
-          <img src="/public/assets/case-one.png" alt="card-image" class="object-cover w-full h-full" />
+          <img src="/public/assets/case3.png" alt="card-image" class="object-cover w-full h-full" />
         </div>
       </div>
 
@@ -282,7 +296,7 @@
             </div>
           </a>
           <div class="pt-1 pl-3">
-            <h3 class="font-serif text-3xl font-bold text-black bg-transparent">ZocDoc Mobile App</h3>
+            <h3 class="text-2xl font-bold text-black bg-transparent">ZocDoc Mobile App</h3>
           </div>
         </div>
 
@@ -299,7 +313,7 @@
             </div>
           </a>
           <div class="pt-1 pl-3">
-            <h3 class="font-serif text-3xl font-bold text-black bg-transparent">Hotel & Tourism Management Website</h3>
+            <h3 class="text-2xl font-bold text-black bg-transparent">Hotel & Tourism Management Website</h3>
           </div>
         </div>
 
@@ -316,7 +330,7 @@
             </div>
           </a>
           <div class="pt-1 pl-3">
-            <h3 class="font-serif text-3xl font-bold text-black bg-transparent">Easywax Cryptocurrency Website</h3>
+            <h3 class="text-2xl font-bold text-black bg-transparent">Easywax Cryptocurrency Website</h3>
           </div>
         </div>
 
@@ -334,7 +348,7 @@
             </div>
           </a>
           <div class="pt-1 pl-3">
-            <h3 class="font-serif text-3xl font-bold text-black bg-transparent">Sport Mountain Bikes Mobile App</h3>
+            <h3 class="text-2xl font-bold text-black bg-transparent">Sport Mountain Bikes Mobile App</h3>
           </div>
         </div>
 
