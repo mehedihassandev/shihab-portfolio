@@ -12,7 +12,7 @@
 
 <body class="font-inter">
   <!-- Header Section -->
-  <header class="header bg-white fixed top-0 left-0 w-full z-40" id="header">
+  <header class="px-24 lg:px-2 header bg-white fixed top-0 left-0 w-full z-40" id="header">
     <nav class="flex flex-row items-center gap-x-5 w-full m-auto max-w-screen-2xl h-20">
       <a href="#">
         <img src="./public/assets/logo.png" alt="logo" class="w-[65px] h-[50px]" />
@@ -55,9 +55,9 @@
 
   <!-- Hero Section -->
   <div
-    class="px-24 py-48 lg:py-0 lg:px-2 lg:flex lg:flex-col lg:justify-center lg:items-center lg:h-screen max-w-screen-2xl"
+    class="px-24 py-24 my-44 lg:py-0 lg:px-2 flex flex-col justify-center items-center lg:h-screen max-w-screen-2xl mx-auto"
     id="about">
-    <div class="grid grid-cols-1 lg:grid-cols-2">
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-24">
       <div>
         <h1 class="text-6xl font-bold text-black pt-8 leading-[4.375rem]">
           I have
@@ -65,12 +65,12 @@
             Design</span>
           Experience
         </h1>
-        <p class="text-[16px] leading-[24px] pt-5 pr-52">
+        <p class="text-[16px] leading-[24px] pt-5 lg:pr-52">
           I’m Shihab, a creative Mid Level UX/UI Designer. I’ve been helping
           businesses to solve their problems with my design Experience for
           more than 3 years.
         </p>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-14">
           <a class="bg-[#0DB760] text-white text-[16px] font-medium leading-[24px] px-[3rem] py-3 rounded-lg mt-10">Download
             CV</a>
           <a class="flex gap-2 text-black text-[16px] font-medium leading-[24px] px-6 py-3 rounded-lg mt-10">View
@@ -78,7 +78,7 @@
             <img src="public/assets/arrow-icon.png" alt="arrow" class="w-[24px] h-[24px]" /></a>
         </div>
       </div>
-      <div class="flex justify-end pt-10">
+      <div class="flex justify-center lg:justify-end pt-10">
         <img src="public/assets/about.png" alt="about" class="w-[30rem] h-[35rem]" />
       </div>
     </div>
@@ -577,8 +577,8 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-2">
-      <div class="h-full pt-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+      <div class="h-full pt-12 flex flex-row lg:flex-col gap-6">
         <div class="flex pb-8">
           <div class="flex h-[56px] w-[56px] items-center justify-center bg-[#0DB760] text-black rounded-md">
             <img src="public/assets/phone.png" alt="location" class="w-[24px] h-[24px]" />
@@ -673,8 +673,8 @@
       </div>
     </div>
   </div>
-  <script src="/main.js"></script>
 </body>
 <!-- partial -->
+<script type="module" src="./main.js"></script>
 
 </html>
