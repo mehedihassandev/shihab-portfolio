@@ -7,13 +7,12 @@
   <link rel="stylesheet" href="./index.css" />
   <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
 
-
   <title>MD. Shihab Parves</title>
 </head>
 
-<body>
+<body class="font-inter">
   <!-- Header Section -->
-  <header class="header bg-white fixed top-0 left-0 w-full z-40" id="header">
+  <header class="px-24  header bg-white fixed top-0 left-0 w-full z-40" id="header">
     <nav class="flex flex-row items-center gap-x-5 w-full m-auto max-w-screen-2xl h-20">
       <a href="#">
         <img src="./public/assets/logo.png" alt="logo" class="w-[65px] h-[50px]" />
@@ -29,7 +28,7 @@
           class="burger-line absolute block left-0 w-full h-[2px] border-none outline-none opacity-100 rounded-full bg-black transition-transform ease-in-out duration-250"></span>
       </div>
       <div
-        class="menu fixed top-[-100%] left-0 w-full h-auto p-[4rem_0_3rem] overflow-hidden bg-white shadow-lg transition-all duration-400 ease-in-out"
+        class="menu fixed top-[-100%] left-0 w-full h-auto p-[4rem_0_3rem] overflow-hidden bg-white shadow-lg transition-all duration-400 ease-in-out font-inter"
         id="menu">
         <ul class="menu-inner flex flex-col justify-center items-center">
           <li class="menu-item">
@@ -39,6 +38,10 @@
           <li class="menu-item">
             <a href="#portfolio"
               class="menu-link font-inherit text-base font-semibold leading-snug text-black uppercase transition-all duration-300">Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a href="#testimonial"
+              class="menu-link font-inherit text-base font-semibold leading-snug text-black uppercase transition-all duration-300">Testimonial</a>
           </li>
           <li class="menu-item">
             <a href="#footer"
@@ -51,21 +54,21 @@
   </header>
 
   <!-- Hero Section -->
-  <div class="px-2 pt-44 pb-24 mx-auto max-w-screen-2xl m-auto" id="about">
-    <div class="grid grid-cols-2">
-      <div class="pt-32">
+  <div class="px-24 flex flex-col justify-center items-center h-screen max-w-screen-2xl mx-auto" id="about">
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-24">
+      <div>
         <h1 class="text-6xl font-bold text-black pt-8 leading-[4.375rem]">
           I have
           <span class="text-[#0DB760]">Creative<br />
             Design</span>
           Experience
         </h1>
-        <p class="text-[16px] leading-[24px] pt-5 pr-52">
+        <p class="text-[16px] leading-[24px] pt-5 lg:pr-52">
           I’m Shihab, a creative Mid Level UX/UI Designer. I’ve been helping
           businesses to solve their problems with my design Experience for
           more than 3 years.
         </p>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-14">
           <a class="bg-[#0DB760] text-white text-[16px] font-medium leading-[24px] px-[3rem] py-3 rounded-lg mt-10">Download
             CV</a>
           <a class="flex gap-2 text-black text-[16px] font-medium leading-[24px] px-6 py-3 rounded-lg mt-10">View
@@ -73,7 +76,7 @@
             <img src="public/assets/arrow-icon.png" alt="arrow" class="w-[24px] h-[24px]" /></a>
         </div>
       </div>
-      <div class="flex justify-end pt-10">
+      <div class="flex justify-center lg:justify-end pt-10">
         <img src="public/assets/about.png" alt="about" class="w-[30rem] h-[35rem]" />
       </div>
     </div>
@@ -84,20 +87,22 @@
 
   <!-- Achievement Section -->
   <div class="px-2 mx-auto max-w-screen-2xl m-auto" id="achievement">
-    <div class="grid grid-cols-3 gap-48">
-      <div class="flex flex-col justify-start border-r-[1px] border-solid border-[#0DB760]">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-24 lg:gap-48">
+      <div
+        class="flex flex-col justify-start items-center lg:items-start border-r-[1px] border-solid border-[#0DB760] text-center lg:text-left">
         <h1 class="text-5xl font-bold text-[#0DB760] leading-[48px]">10+</h1>
         <p class="text-[28px] leading-[28px] pt-5 capitalize">
           Satisfied clients
         </p>
       </div>
-      <div class="flex flex-col justify-start border-r-[1px] border-solid border-[#0DB760]">
+      <div
+        class="flex flex-col justify-start items-center lg:items-start border-r-[1px] border-solid border-[#0DB760] text-center lg:text-left">
         <h1 class="text-5xl font-bold text-[#0DB760] leading-[48px]">20+</h1>
         <p class="text-[28px] leading-[28px] pt-5 capitalize">
           Projects completed
         </p>
       </div>
-      <div class="flex flex-col justify-start">
+      <div class="flex flex-col justify-start items-center lg:items-start text-center lg:text-left">
         <h1 class="text-5xl font-bold text-[#0DB760] leading-[48px]">100+</h1>
         <p class="text-[28px] leading-[28px] pt-5 capitalize">
           Reviews given
@@ -107,123 +112,186 @@
   </div>
 
   <!-- Skills Section -->
-  <div class="px-2 mx-auto max-w-screen-2xl m-auto" id="skills">
-    <div class="grid grid-cols-2">
-      <div class="pt-44">
-        <!-- <h5 class="text-xl text-[#0DB760] leading-[29px]">My Skills</h5> -->
-        <h2 class="text-[40px] font-bold text-black leading-[54px]">
-          Why Hire Me For Your <br />
-          Next <span class="text-[#0DB760]">Project?</span>
-        </h2>
-        <p class="text-[16px] leading-[24px] pt-2 pr-60 pb-10">
-          I’m specialist in UI/UX Designer. My passion is designing & solving
-          problems through user experience and research.
-        </p>
-        <a class="bg-[#0DB760] text-white text-[16px] font-medium leading-[24px] px-[3.5rem] py-3 rounded-lg">Hire
-          Me</a>
+  <section>
+    <img src="/public/assets/square-shape.png" alt="ellipse"
+      class="relative top-64 right-0 w-[36px] h-[132px] z-50 ml-auto" />
+    <div class="px-24  mx-auto max-w-screen-2xl m-auto" id="skills">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="pt-44">
+          <!-- <h5 class="text-xl text-[#0DB760] leading-[29px]">My Skills</h5> -->
+          <h2 class="text-[40px] font-bold text-black leading-[54px]">
+            Why Hire Me For Your <br />
+            Next <span class="text-[#0DB760]">Project?</span>
+          </h2>
+          <p class="text-[16px] leading-[24px] pt-2 pr-60 pb-10">
+            I’m specialist in UI/UX Designer. My passion is designing & solving
+            problems through user experience and research.
+          </p>
+          <a class="bg-[#0DB760] text-white text-[16px] font-medium leading-[24px] px-[3.5rem] py-3 rounded-lg">Hire
+            Me</a>
+        </div>
+        <div class="grid grid-cols-2 pt-32 gap-10">
+          <div class="p-6 bg-[#fafafa] rounded-md">
+            <img src="public/assets/diamond.png" alt="diamond" class="w-[28px] h-[28px]" />
+            <h5 class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
+              Visual Design
+            </h5>
+            <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
+              Create user interface design with unique & modern ideas
+            </p>
+          </div>
+          <div class="p-6 bg-[#fafafa] rounded-md relative top-28 left-0">
+            <img src="public/assets/pulse.png" alt="diamond" class="w-[28px] h-[28px]" />
+            <h5 class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
+              Design Prototype
+            </h5>
+            <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
+              Create advance design prototype with Figma apps.
+            </p>
+          </div>
+          <div class="p-6 bg-[#fafafa] rounded-md">
+            <img src="public/assets/school.png" alt="diamond" class="w-[28px] h-[28px]" />
+            <h5 class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
+              UX Research
+            </h5>
+            <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
+              Create digital user products with updated ideas
+            </p>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="grid grid-cols-2 pt-32 gap-10">
-        <div class="p-6 bg-[#fafafa] rounded-md">
-          <img src="public/assets/diamond.png" alt="diamond" class="w-[28px] h-[28px]" />
-          <h5 class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
-            Visual Design
-          </h5>
-          <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
-            Create user interface design with unique & modern ideas
-          </p>
+  <!-- About Section -->
+  <section>
+    <img src="/public/assets/square-shape.png" alt="ellipse" class="relative top-56 left-0 w-[36px] h-[132px] z-50" />
+    <div class="px-24  mx-auto max-w-screen-2xl m-auto pt-20" id="skills">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="col-span-1 lg:row-span-2">
+          <img src="public/assets/about2.png" alt="about" class="w-full lg:w-[371px] lg:h-[500px]" />
         </div>
-        <div class="p-6 bg-[#fafafa] rounded-md relative top-28 left-0">
-          <img src="public/assets/pulse.png" alt="diamond" class="w-[28px] h-[28px]" />
-          <h5 class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
-            Design Prototype
-          </h5>
-          <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
-            Create advance design prototype with Figma apps.
+        <div class="col-span-1 lg:col-span-2 lg:row-span-10 pt-14 bg-cover bg-center"
+          style="background-image: url('./public/assets/spchanchol.png');">
+          <h5 class="text-xl text-[#0DB760]">About Me</h5>
+          <h2 class="text-[30px] lg:text-[60px] font-bold text-black">
+            Md.Shihab Parves
+          </h2>
+          <h3 class="text-[20px] lg:text-[24px] font-semibold text-black pb-7">
+            UX/UI Designer | Webflow Designer
+          </h3>
+          <p class="text-[16px] text-[#323433] leading-[24px] font-semibold pt-2 pb-5">
+            Self-motivated Mid-Level UX/UI Designer with 4+ years of experience in creating digital products across
+            diverse sectors, including POS systems, SaaS, enterprise software, mobile apps, fintech, and crypto
+            websites.
           </p>
-        </div>
-        <div class="p-6 bg-[#fafafa] rounded-md">
-          <img src="public/assets/school.png" alt="diamond" class="w-[28px] h-[28px]" />
-          <h5 class="mb-2 mt-4 text-[20px] leading-[20px] font-semibold tracking-tight text-black">
-            UX Research
-          </h5>
-          <p class="mb-3 font-normal text-black text-[14px] leading-[21px]">
-            Create digital user products with updated ideas
+          <p class="text-[16px] text-[#323433] leading-[24px] pt-2 ">
+            In my role, I have enough knowledge of user experience methods, visual design, innovation, ideation,
+            prototyping, concept visualization, user testing, presentation, and support the developers through the
+            launch
+            process. Values teamwork and brings a growth mindset to every challenge, constantly seeking new knowledge
+            and
+            skills.
           </p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Slider Section -->
+  <section class="w-full overflow-hidden whitespace-nowrap bg-green-500 py-2 mt-24">
+    <div class="marquee flex items-center space-x-8 text-white text-lg font-semibold">
+      <span>✦ VISUAL DESIGN EXPERTISE</span>
+      <span>✦ USER-INTERFACE</span>
+      <span>✦ APP DESIGN</span>
+      <span>✦ DESIGN THINKING</span>
+      <span>✦ PRODUCT</span>
+      <!-- Duplicate content for seamless scrolling -->
+      <span>✦ VISUAL DESIGN EXPERTISE</span>
+      <span>✦ USER-INTERFACE</span>
+      <span>✦ APP DESIGN</span>
+      <span>✦ DESIGN THINKING</span>
+      <span>✦ PRODUCT</span>
+      <!-- Duplicate content for seamless scrolling -->
+      <span>✦ VISUAL DESIGN EXPERTISE</span>
+      <span>✦ USER-INTERFACE</span>
+      <span>✦ APP DESIGN</span>
+      <span>✦ DESIGN THINKING</span>
+      <span>✦ PRODUCT</span>
+    </div>
+  </section>
+
 
   <!-- Case Study Section -->
   <section>
-    <img src="/public/assets/square-shape.png" alt="ellipse" class="relative top-56 left-0 w-[36px] h-[132px] z-50" />
+    <img src="/public/assets/square-shape.png" alt="ellipse"
+      class="relative top-64 right-0 w-[36px] h-[132px] z-50 ml-auto" />
 
-    <div class="px-2 mx-auto max-w-screen-2xl">
+    <div class="px-24  mx-auto max-w-screen-2xl">
       <h3 class="text-[40px] text-black font-bold leading-[66px]">
         My <span class="text-[#0DB760]">Case Studies</span>
       </h3>
 
       <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-lg w-full flex-row mt-10">
         <div class="py-10 w-full px-16">
-          <h6 class="block leading-[32px] text-gray-700 text-[20px] pb-1">
+          <h6 class="block leading-[32px] text-gray-700 text-[16px] pb-1">
             UX Case Study
           </h6>
-          <h4 class="block mb-2 text-3xl antialiased font-bold leading-snug tracking-normal text-[#2F2A4B]">
-            Telehealth UX Case Study
+          <h4 class="block mb-2 text-2xl antialiased font-bold leading-snug tracking-normal text-[#2F2A4B]">
+            Vojbari Food Delivery App
           </h4>
-          <p class="block mb-8 text-lg antialiased leading-[30px] text-[#2F2A4B]">
+          <p class="block mb-8 text-base antialiased leading-[30px] text-[#2F2A4B]">
             Designing for User Engagement and Retention
           </p>
           <a href="#"
-            class="flex items-center gap-4 py-3 text-base font-bold text-center uppercase transition-all rounded-lg text-[#0DB760]">
+            class="flex items-center gap-4 py-3 text-sm font-bold text-center uppercase transition-all rounded-lg text-[#0DB760]">
             Click to Visit <img src="/public/assets/arrow-right.png" /></a>
         </div>
 
         <div class="relative w-2/5 rounded-r-xl">
-          <img src="/public/assets/case-one.png" alt="card-image" class="object-cover w-full h-full" />
+          <img src="/public/assets/case1.png" alt="card-image" class="object-cover w-full h-full" />
         </div>
       </div>
 
       <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-lg w-full flex-row mt-10">
         <div class="py-10 w-full px-16">
-          <h6 class="block leading-[32px] text-gray-700 text-[20px] pb-1">
+          <h6 class="block leading-[32px] text-gray-700 text-[16px] pb-1">
             UX Case Study
           </h6>
-          <h4 class="block mb-2 text-3xl antialiased font-bold leading-snug tracking-normal text-[#2F2A4B]">
-            Telehealth UX Case Study
+          <h4 class="block mb-2 text-2xl antialiased font-bold leading-snug tracking-normal text-[#2F2A4B]">
+            TimepieceX — A UX Case Study
           </h4>
-          <p class="block mb-8 text-lg antialiased leading-[30px] text-[#2F2A4B]">
-            Designing for User Engagement and Retention
+          <p class="block mb-8 text-base antialiased leading-[30px] text-[#2F2A4B]">
+            Redesigning smart Watch User Experience
           </p>
           <a href="#"
-            class="flex items-center gap-4 py-3 text-base font-bold text-center uppercase transition-all rounded-lg text-[#0DB760]">
+            class="flex items-center gap-4 py-3 text-sm font-bold text-center uppercase transition-all rounded-lg text-[#0DB760]">
             Click to Visit <img src="/public/assets/arrow-right.png" /></a>
         </div>
 
         <div class="relative w-2/5 rounded-r-xl">
-          <img src="/public/assets/case-one.png" alt="card-image" class="object-cover w-full h-full" />
+          <img src="/public/assets/case2.png" alt="card-image" class="object-cover w-full h-full" />
         </div>
       </div>
 
       <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-lg w-full flex-row mt-10">
         <div class="py-10 w-full px-16">
-          <h6 class="block leading-[32px] text-gray-700 text-[20px] pb-1">
+          <h6 class="block leading-[32px] text-gray-700 text-[16px] pb-1">
             UX Case Study
           </h6>
-          <h4 class="block mb-2 text-3xl antialiased font-bold leading-snug tracking-normal text-[#2F2A4B]">
-            Telehealth UX Case Study
+          <h4 class="block mb-2 text-2xl antialiased font-bold leading-snug tracking-normal text-[#2F2A4B]">
+            MyCare App
           </h4>
-          <p class="block mb-8 text-lg antialiased leading-[30px] text-[#2F2A4B]">
-            Designing for User Engagement and Retention
+          <p class="block mb-8 text-base antialiased leading-[30px] text-[#2F2A4B]">
+            Wallet app for offers, bills, & more
           </p>
           <a href="#"
-            class="flex items-center gap-4 py-3 text-base font-bold text-center uppercase transition-all rounded-lg text-[#0DB760]">
+            class="flex items-center gap-4 py-3 text-sm font-bold text-center uppercase transition-all rounded-lg text-[#0DB760]">
             Click to Visit <img src="/public/assets/arrow-right.png" /></a>
         </div>
 
         <div class="relative w-2/5 rounded-r-xl">
-          <img src="/public/assets/case-one.png" alt="card-image" class="object-cover w-full h-full" />
+          <img src="/public/assets/case3.png" alt="card-image" class="object-cover w-full h-full" />
         </div>
       </div>
 
@@ -234,12 +302,12 @@
   <section id="portfolio">
     <img src="/public/assets/square-shape.png" alt="ellipse" class="relative top-56 left-0 w-[36px] h-[132px] z-50" />
 
-    <div class="px-2 mx-auto max-w-screen-2xl">
+    <div class="px-24  mx-auto max-w-screen-2xl">
 
       <h3 class="text-[40px] text-black font-bold leading-[66px] pb-8">
         My <span class="text-[#0DB760]">Portfolio</span>
       </h3>
-      <div class="grid grid-cols-2 gap-2">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
         <div class="relative flex flex-col justify-center overflow-hidden pb-10">
           <div class="absolute inset-0 bg-center"></div>
           <a href="#">
@@ -253,7 +321,7 @@
             </div>
           </a>
           <div class="pt-1 pl-3">
-            <h3 class="font-serif text-3xl font-bold text-black bg-transparent">ZocDoc Mobile App</h3>
+            <h3 class="text-2xl font-bold text-black bg-transparent">ZocDoc Mobile App</h3>
           </div>
         </div>
 
@@ -270,7 +338,7 @@
             </div>
           </a>
           <div class="pt-1 pl-3">
-            <h3 class="font-serif text-3xl font-bold text-black bg-transparent">Hotel & Tourism Management Website</h3>
+            <h3 class="text-2xl font-bold text-black bg-transparent">Hotel & Tourism Management Website</h3>
           </div>
         </div>
 
@@ -287,7 +355,7 @@
             </div>
           </a>
           <div class="pt-1 pl-3">
-            <h3 class="font-serif text-3xl font-bold text-black bg-transparent">Easywax Cryptocurrency Website</h3>
+            <h3 class="text-2xl font-bold text-black bg-transparent">Easywax Cryptocurrency Website</h3>
           </div>
         </div>
 
@@ -305,7 +373,7 @@
             </div>
           </a>
           <div class="pt-1 pl-3">
-            <h3 class="font-serif text-3xl font-bold text-black bg-transparent">Sport Mountain Bikes Mobile App</h3>
+            <h3 class="text-2xl font-bold text-black bg-transparent">Sport Mountain Bikes Mobile App</h3>
           </div>
         </div>
 
@@ -316,7 +384,7 @@
 
   <!-- Reviews Section -->
   <section class="py-20">
-    <div class="mx-auto max-w-screen-2xl py-6">
+    <div class="mx-auto px-24  max-w-screen-2xl py-6">
       <div class="items-end justify-between sm:flex sm:pe-6 lg:pe-8">
         <h2 class="text-[40px] leading-[54px]">
           Our Customer Say <br /> Something <span class="text-[#0DB760]">About Us</span>
@@ -492,7 +560,7 @@
 
 
   <!-- Footer Section -->
-  <footer class="bg-white px-2 pt-16 pb-16 mx-auto max-w-screen-2xl m-auto" id="footer">
+  <footer class="bg-white px-24  pt-16 pb-16 mx-auto max-w-screen-2xl m-auto" id="footer">
     <div class="mb-4">
       <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
         <h5 class="text-xl text-[#0DB760] leading-[29px]">Contact</h5>
@@ -507,8 +575,8 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-2">
-      <div class="h-full pt-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+      <div class="h-full pt-12 flex flex-row lg:flex-col gap-6">
         <div class="flex pb-8">
           <div class="flex h-[56px] w-[56px] items-center justify-center bg-[#0DB760] text-black rounded-md">
             <img src="public/assets/phone.png" alt="location" class="w-[24px] h-[24px]" />
@@ -580,10 +648,12 @@
   </footer>
 
   <!-- Bottom Footer -->
-  <div class="px-2 pb-12 mx-auto max-w-screen-2xl">
+  <div class="px-24  pb-12 mx-auto max-w-screen-2xl">
     <div class="grid grid-cols-3 border-solid border-t border-t-black pt-10">
       <h4 class="text-[16px] leading-[16px] text-black">
-        @ 2022. All Rights Reserved
+        @ 2024. All Rights Reserved by <a href="https://github.com/mehedihassandev" class="text-[#0DB760]"
+          target="_blank">Md. Mehedi
+          Hassan</a>
       </h4>
 
       <h4 class="text-[16px] leading-[16px] text-black text-center">
