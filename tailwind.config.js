@@ -9,6 +9,7 @@ export default {
             colors: {
                 primary: "#0DB760",
                 case_study: "#FAFAFA",
+                text_color: "#323232",
             },
         },
     },
